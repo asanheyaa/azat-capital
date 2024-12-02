@@ -778,10 +778,12 @@ body.dark .pop-up__close span {
 }
 .footer-menu__link {
   color: rgb(255, 255, 255);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
-@media (any-hover: hover) {
+@media (any-hover: hover) and (any-hover: hover) {
   .footer-menu__link:hover {
-    text-decoration: underline;
+    opacity: 0.5;
   }
 }
 
@@ -834,12 +836,21 @@ body.dark .pop-up__close span {
 .contacts__form {
   text-align: center;
 }
+.contacts__form .iti {
+  width: 100%;
+}
+.contacts__form .iti__selected-dial-code {
+  font-size: 16px;
+  font-weight: 300;
+}
 .contacts__input {
   padding: 16px 0;
   border-bottom: 1px solid rgb(33, 33, 33);
   display: block;
   width: 100%;
   margin-bottom: 32px;
+  font-size: 16px;
+  font-weight: 300;
 }
 .contacts__input::-webkit-input-placeholder {
   color: rgb(33, 33, 33);
@@ -868,6 +879,8 @@ body.dark .pop-up__close span {
   width: 100%;
   margin-bottom: 32px;
   height: 140px;
+  font-size: 16px;
+  font-weight: 300;
 }
 .contacts__textarea::-webkit-input-placeholder {
   color: rgb(33, 33, 33);
@@ -957,8 +970,13 @@ body.dark .pop-up__close span {
   max-width: 793px;
   width: 100%;
   max-height: 85vh;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
   overflow-y: auto;
   overflow-x: hidden;
+}
+.pop-up__content::-webkit-scrollbar {
+  display: none;
 }
 .pop-up__content-contacts {
   max-width: 500px;
@@ -1014,8 +1032,9 @@ body.dark .pop-up__close span {
 }
 .pop-up._active {
   top: 0;
-  -webkit-transition: top 0.3s ease 0s;
-  transition: top 0.3s ease 0s;
+  -webkit-transition: top 0.3s ease 0s, background 0.3s ease 0.3s;
+  transition: top 0.3s ease 0s, background 0.3s ease 0.3s;
+  background: rgba(33, 33, 33, 0.2);
 }
 .pop-up__footer {
   text-align: right;
@@ -1077,6 +1096,14 @@ body.dark .pop-up__close span {
     margin-bottom: calc(30px + 10 * (100vw - 320px) / 970);
   }
 }
+.text-block__main-title-dobble-space {
+  margin-top: 100px;
+}
+@media (max-width: 1290px) {
+  .text-block__main-title-dobble-space {
+    margin-top: calc(80px + 20 * (100vw - 320px) / 970);
+  }
+}
 .text-block__title {
   font-family: Playfair;
   font-size: 32px;
@@ -1094,6 +1121,9 @@ body.dark .pop-up__close span {
 }
 .text-block__ul {
   margin-bottom: 40px;
+}
+.text-block__ul-left-space {
+  margin-left: 30px;
 }
 @media (max-width: 1290px) {
   .text-block__ul {

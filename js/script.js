@@ -99,3 +99,10 @@ if (closeButtons) {
 	});
 	
 }
+
+
+const input = document.querySelector("#phone");
+window.intlTelInput(input, {
+	initialCountry: "lv",
+	separateDialCode: true,
+});

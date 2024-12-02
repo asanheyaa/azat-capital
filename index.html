@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main-styles.css">
     <title>Azat Capital</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@24.8.1/build/css/intlTelInput.css">
+
+
     <!-- <link
         href="https://fonts.googleapis.com/css?family=Playfair:regular,600,700&display=swap"
         rel="stylesheet"> -->
@@ -281,7 +284,7 @@
                 <form action="#" class="contacts__form">
                     <input type="text" placeholder="full name" class="contacts__input">
                     <input type="email" placeholder="e-mail" class="contacts__input">
-                    <input type="tel" placeholder="phone number" class="contacts__input">
+                    <input id="phone" type="tel" placeholder="phone number" class="contacts__input">
                     <textarea name="message" placeholder="message" class="contacts__textarea"></textarea>
                     <button class="contacts__button"><span>submit</span> <svg>
                             <use xlink:href='img/icons/icons-sprite.svg#arrow'></use>
@@ -501,7 +504,7 @@
                             You may not:
                         </strong></p>
 
-                    <ul class="text-block__ul">
+                    <ul class="text-block__ul text-block__ul-left-space">
                         <li>
                             Copy, distribute, or modify any part of the website without our written consent.
                         </li>
@@ -535,7 +538,7 @@
                     <p class="text-block__p">These Terms of Use are governed by the laws of the <strong>United
                             Kingdom</strong>, and any disputes arising from the use of the website
                         will be resolved under these laws.</p>
-                    <h2 class="text-block__main-title">Legal Notice</h2>
+                    <h2 class="text-block__main-title text-block__main-title-dobble-space">Legal Notice</h2>
                     <div class="text-block__label">
                         This website is intended for professional property investors and intermediaries only.
                     </div>
@@ -565,6 +568,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@24.8.1/build/js/intlTelInput.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
