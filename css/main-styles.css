@@ -263,6 +263,11 @@ body.dark .iti__search-input {
   margin: 0 auto;
   padding: 0 15px;
 }
+@media (max-width: 991.98px) {
+  [class*=__container] {
+    padding: 0 24px;
+  }
+}
 
 .decor {
   -webkit-box-flex: 0;
@@ -504,7 +509,7 @@ body.dark .iti__search-input {
 }
 @media (max-width: 1290px) {
   .values__items {
-    gap: calc(10px + 54 * (100vw - 320px) / 970);
+    gap: calc(40px + 24 * (100vw - 320px) / 970);
   }
 }
 @media (max-width: 767.98px) {
@@ -533,7 +538,7 @@ body.dark .iti__search-input {
 }
 @media (max-width: 1290px) {
   .values__label {
-    margin-bottom: calc(30px + 18 * (100vw - 320px) / 970);
+    margin-bottom: calc(10px + 38 * (100vw - 320px) / 970);
   }
 }
 .solutions {
