@@ -92,37 +92,37 @@ body {
   font-family: "Lexend";
   font-style: normal;
   font-weight: 400;
-  src: local("Lexend"), url("/fonts/lexend/Lexend-Regular.woff2") format("woff2"), url("/fonts/lexend/Lexend-Regular.woff") format("woff");
+  src: local("Lexend"), url("../fonts/lexend/Lexend-Regular.woff2") format("woff2"), url("../fonts/lexend/Lexend-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Lexend";
   font-style: normal;
   font-weight: 300;
-  src: local("Lexend"), url("/fonts/lexend/Lexend-Light.woff2") format("woff2"), url("/fonts/lexend/Lexend-Light.woff") format("woff");
+  src: local("Lexend"), url("../fonts/lexend/Lexend-Light.woff2") format("woff2"), url("../fonts/lexend/Lexend-Light.woff") format("woff");
 }
 @font-face {
   font-family: "Lexend";
   font-style: normal;
   font-weight: 600;
-  src: local("Lexend"), url("/fonts/lexend/Lexend-SemiBold.woff2") format("woff2"), url("/fonts/lexend/Lexend-SemiBold.woff") format("woff");
+  src: local("Lexend"), url("../fonts/lexend/Lexend-SemiBold.woff2") format("woff2"), url("../fonts/lexend/Lexend-SemiBold.woff") format("woff");
 }
 @font-face {
   font-family: "Playfair";
   font-style: normal;
   font-weight: 400;
-  src: local("Playfair"), url("/fonts/playfair/Playfair_9pt-Regular.woff2") format("woff2"), url("/fonts/playfair/Playfair_9pt-Regular.woff") format("woff");
+  src: local("Playfair"), url("../fonts/playfair/Playfair_9pt-Regular.woff2") format("woff2"), url("../fonts/playfair/Playfair_9pt-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Playfair";
   font-style: normal;
   font-weight: 600;
-  src: local("Playfair"), url("/fonts/playfair/Playfair_9pt-SemiBold.woff2") format("woff2"), url("/fonts/playfair/Playfair_9pt-SemiBold.woff") format("woff");
+  src: local("Playfair"), url("../fonts/playfair/Playfair_9pt-SemiBold.woff2") format("woff2"), url("../fonts/playfair/Playfair_9pt-SemiBold.woff") format("woff");
 }
 @font-face {
   font-family: "Playfair";
   font-style: normal;
   font-weight: 700;
-  src: local("Playfair"), url("/fonts/playfair/Playfair_9pt-Bold.woff2") format("woff2"), url("/fonts/playfair/Playfair_9pt-Bold.woff") format("woff");
+  src: local("Playfair"), url("../fonts/playfair/Playfair_9pt-Bold.woff2") format("woff2"), url("../fonts/playfair/Playfair_9pt-Bold.woff") format("woff");
 }
 body {
   color: rgb(33, 33, 33);
