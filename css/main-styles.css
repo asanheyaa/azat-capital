@@ -232,6 +232,13 @@ body.dark .text-block__ul li::before {
 body.dark .pop-up__close span {
   color: rgb(255, 255, 255);
 }
+body.dark .iti__dropdown-content {
+  background: rgb(33, 33, 33);
+}
+body.dark .iti__search-input {
+  background: rgb(33, 33, 33);
+  color: rgb(255, 255, 255);
+}
 
 .wrapper {
   overflow: hidden;
@@ -842,6 +849,18 @@ body.dark .pop-up__close span {
 .contacts__form .iti__selected-dial-code {
   font-size: 16px;
   font-weight: 300;
+}
+.contacts__form .iti__search-input {
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.contacts__form .iti__country-list {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.contacts__form .iti__country-list::-webkit-scrollbar {
+  display: none;
 }
 .contacts__input {
   padding: 16px 0;
