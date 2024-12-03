@@ -1,18 +1,18 @@
 // switch theme
 
-const switcherTheme = document.querySelectorAll('.theme-switcher__button');
+const switcherTheme = document.querySelectorAll('[data-theme]');
 
 
 if (switcherTheme) {
 	switcherTheme.forEach(switcher => {
 		switcher.addEventListener('click', (e) => {
-
-			const activeButton = document.querySelector('.theme-switcher__button._active')
+			const wrapper = switcher.closest('.theme-switcher')
+			const activeButton = wrapper.querySelector('.theme-switcher__button._active')
 			activeButton.classList.remove('_active')
 			
-			
-			switcher.classList.add('_active')
 			let mode = switcher.dataset.theme
+			const currentlyActiveButton = wrapper.querySelector(`.theme-switcher__${mode}`)
+			currentlyActiveButton.classList.add('_active')
 
 			if (mode === "light") { 
 				document.body.classList.remove('dark')
@@ -30,10 +30,15 @@ if (switcherTheme) {
 		if (activeTheme === "light") {
 			document.body.classList.remove('dark')
 		} else if (activeTheme === "dark") {
-			const lightButton = document.querySelector('.theme-switcher__light'),
-				darkButton = document.querySelector('.theme-switcher__dark')
-			lightButton.classList.remove('_active')
-			darkButton.classList.add('_active')
+			const lightButtons = document.querySelectorAll('.theme-switcher__light'),
+				darkButtons = document.querySelectorAll('.theme-switcher__dark')
+			lightButtons.forEach(lightButton => {
+				lightButton.classList.remove('_active')
+			});
+
+			darkButtons.forEach(darkButton => {
+				darkButton.classList.add('_active')
+			});
 
 			document.body.classList.add('dark')
 			
@@ -100,6 +105,7 @@ if (closeButtons) {
 	
 }
 
+// contact form code country
 
 const input = document.querySelector("#phone");
 window.intlTelInput(input, {

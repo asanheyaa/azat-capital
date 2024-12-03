@@ -92,37 +92,37 @@ body {
   font-family: "Lexend";
   font-style: normal;
   font-weight: 400;
-  src: local("Lexend"), url("../fonts/lexend/Lexend-Regular.woff2") format("woff2"), url("../fonts/lexend/Lexend-Regular.woff") format("woff");
+  src: url("../fonts/lexend/Lexend-Regular.woff2") format("woff2"), url("../fonts/lexend/Lexend-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Lexend";
   font-style: normal;
   font-weight: 300;
-  src: local("Lexend"), url("../fonts/lexend/Lexend-Light.woff2") format("woff2"), url("../fonts/lexend/Lexend-Light.woff") format("woff");
+  src: url("../fonts/lexend/Lexend-Light.woff2") format("woff2"), url("../fonts/lexend/Lexend-Light.woff") format("woff");
 }
 @font-face {
   font-family: "Lexend";
   font-style: normal;
   font-weight: 600;
-  src: local("Lexend"), url("../fonts/lexend/Lexend-SemiBold.woff2") format("woff2"), url("../fonts/lexend/Lexend-SemiBold.woff") format("woff");
+  src: url("../fonts/lexend/Lexend-SemiBold.woff2") format("woff2"), url("../fonts/lexend/Lexend-SemiBold.woff") format("woff");
 }
 @font-face {
   font-family: "Playfair";
   font-style: normal;
   font-weight: 400;
-  src: local("Playfair"), url("../fonts/playfair/Playfair_9pt-Regular.woff2") format("woff2"), url("../fonts/playfair/Playfair_9pt-Regular.woff") format("woff");
+  src: url("../fonts/playfair/Playfair_9pt-Regular.woff2") format("woff2"), url("../fonts/playfair/Playfair_9pt-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Playfair";
   font-style: normal;
   font-weight: 600;
-  src: local("Playfair"), url("../fonts/playfair/Playfair_9pt-SemiBold.woff2") format("woff2"), url("../fonts/playfair/Playfair_9pt-SemiBold.woff") format("woff");
+  src: url("../fonts/playfair/Playfair_9pt-SemiBold.woff2") format("woff2"), url("../fonts/playfair/Playfair_9pt-SemiBold.woff") format("woff");
 }
 @font-face {
   font-family: "Playfair";
   font-style: normal;
   font-weight: 700;
-  src: local("Playfair"), url("../fonts/playfair/Playfair_9pt-Bold.woff2") format("woff2"), url("../fonts/playfair/Playfair_9pt-Bold.woff") format("woff");
+  src: url("../fonts/playfair/Playfair_9pt-Bold.woff2") format("woff2"), url("../fonts/playfair/Playfair_9pt-Bold.woff") format("woff");
 }
 body {
   color: rgb(33, 33, 33);
@@ -152,12 +152,16 @@ body.dark .header-menu__link {
 body.dark .theme-switcher__button {
   color: rgb(255, 255, 255);
 }
-body.dark .theme-switcher__button._active {
-  background: rgb(255, 255, 255);
-  color: rgb(33, 33, 33);
+@media (min-width: 991.98px) {
+  body.dark .theme-switcher__button._active {
+    background: rgb(255, 255, 255);
+    color: rgb(33, 33, 33);
+  }
 }
-body.dark .theme-switcher__button:hover {
-  background: rgba(255, 255, 255, 0.2);
+@media (min-width: 991.98px) {
+  body.dark .theme-switcher__button:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
 }
 body.dark .header-menu__dark-logo {
   display: block;
@@ -238,6 +242,12 @@ body.dark .iti__dropdown-content {
 body.dark .iti__search-input {
   background: rgb(33, 33, 33);
   color: rgb(255, 255, 255);
+}
+body.dark .pop-up__header {
+  background: rgb(33, 33, 33);
+}
+body.dark .pop-up__header-mobile {
+  background: rgb(33, 33, 33);
 }
 
 .wrapper {
@@ -328,8 +338,6 @@ body.dark .iti__search-input {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 15px;
-    padding-right: 70px;
   }
 }
 @media (min-width: 991.98px) {
@@ -708,7 +716,7 @@ body.dark .iti__search-input {
   margin-bottom: 64px;
 }
 .sentence__text {
-  max-width: 816px;
+  max-width: 830px;
   margin: 0 auto;
   text-align: center;
   font-family: Playfair;
@@ -758,6 +766,9 @@ body.dark .iti__search-input {
             flex-direction: column;
   }
 }
+.footer__copy {
+  text-align: center;
+}
 @media (max-width: 1300px) {
   .footer__copy {
     -webkit-box-ordinal-group: 11;
@@ -806,17 +817,25 @@ body.dark .iti__search-input {
   padding: 5px;
   z-index: 110;
 }
+@media (max-width: 991.98px) {
+  .theme-switcher {
+    display: none;
+  }
+}
+.theme-switcher-mobile {
+  display: block;
+  position: static;
+}
+@media (min-width: 991.98px) {
+  .theme-switcher-mobile {
+    display: none;
+  }
+}
 @media (min-width: 991.98px) {
   .theme-switcher {
     -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.12);
             box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.12);
     background: rgba(218, 218, 218, 0.1);
-  }
-}
-@media (max-width: 991.98px) {
-  .theme-switcher {
-    top: 28px;
-    right: 15px;
   }
 }
 .theme-switcher__button {
@@ -830,23 +849,40 @@ body.dark .iti__search-input {
   transition: all 0.3s ease 0s;
   width: 100%;
 }
-.theme-switcher__button._active {
-  display: block;
-  background: rgb(21, 21, 21);
-  color: rgb(255, 255, 255);
+@media (min-width: 991.98px) {
+  .theme-switcher__button._active {
+    display: block;
+    background: rgb(21, 21, 21);
+    color: rgb(255, 255, 255);
+  }
 }
-@media (any-hover: hover) {
+@media (any-hover: hover) and (min-width: 991.98px) {
   .theme-switcher__button:hover {
     background: rgba(21, 21, 21, 0.2);
   }
 }
 @media (max-width: 991.98px) {
-  .theme-switcher__button._active {
+  .theme-switcher__button {
     display: none;
+  }
+  .theme-switcher__button._active {
+    display: block;
   }
 }
 .contacts__form {
   text-align: center;
+  padding-left: 44px;
+  padding-right: 44px;
+}
+@media (max-width: 1290px) {
+  .contacts__form {
+    padding-left: calc(20px + 24 * (100vw - 320px) / 970);
+  }
+}
+@media (max-width: 1290px) {
+  .contacts__form {
+    padding-right: calc(20px + 24 * (100vw - 320px) / 970);
+  }
 }
 .contacts__form .iti {
   width: 100%;
@@ -939,6 +975,7 @@ body.dark .iti__search-input {
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  font-size: 16px;
 }
 .contacts__button svg {
   display: inline-block;
@@ -989,10 +1026,10 @@ body.dark .iti__search-input {
   }
 }
 .pop-up__content {
-  padding: 48px;
   background: rgb(255, 255, 255);
   max-width: 793px;
   width: 100%;
+  position: relative;
   max-height: 85vh;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -1003,7 +1040,7 @@ body.dark .iti__search-input {
   display: none;
 }
 .pop-up__content-contacts {
-  max-width: 500px;
+  max-width: 580px;
 }
 @media (max-width: 991.98px) {
   .pop-up__content {
@@ -1011,6 +1048,31 @@ body.dark .iti__search-input {
     height: 100%;
     max-width: unset;
     min-height: 100vh;
+  }
+}
+.pop-up__header-mobile {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 71px 24px 24px 24px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: rgb(255, 255, 255);
+  z-index: 5;
+}
+@media (min-width: 991.98px) {
+  .pop-up__header-mobile {
+    display: none;
+  }
+}
+@media (max-width: 991.98px) {
+  .pop-up__header-mobile .pop-up__cross {
+    display: block;
   }
 }
 .pop-up__header {
@@ -1023,24 +1085,40 @@ body.dark .iti__search-input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 64px;
+  margin-bottom: 40px;
+  padding: 0 24px;
 }
 @media (max-width: 1290px) {
   .pop-up__header {
-    margin-bottom: calc(30px + 34 * (100vw - 320px) / 970);
+    margin-bottom: calc(20px + 20 * (100vw - 320px) / 970);
   }
 }
-@media (max-width: 767.98px) {
+@media (min-width: 991.98px) {
   .pop-up__header {
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    padding: 54px 48px;
+    position: sticky;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+  }
+}
+.pop-up__wrapper {
+  padding: 0 48px 48px 48px;
+}
+@media (max-width: 991.98px) {
+  .pop-up__wrapper {
+    padding: 0 24px 48px;
   }
 }
 .pop-up__title {
   margin: 0;
 }
 .pop-up__cross {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 18px;
+          flex: 0 0 18px;
   width: 18px;
   height: 18px;
   overflow: hidden;
@@ -1049,9 +1127,9 @@ body.dark .iti__search-input {
   stroke: #212121;
   fill: #212121;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .pop-up__cross {
-    margin-bottom: 50px;
+    display: none;
   }
 }
 .pop-up._active {
