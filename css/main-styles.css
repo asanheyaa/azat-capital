@@ -1124,7 +1124,6 @@ body.dark .pop-up__header-mobile {
   overflow: hidden;
 }
 .pop-up__cross svg {
-  stroke: #212121;
   fill: #212121;
 }
 @media (max-width: 991.98px) {
