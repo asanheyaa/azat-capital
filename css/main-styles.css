@@ -124,6 +124,12 @@ body {
   font-weight: 700;
   src: url("../fonts/playfair/Playfair_9pt-Bold.woff2") format("woff2"), url("../fonts/playfair/Playfair_9pt-Bold.woff") format("woff");
 }
+@font-face {
+  font-family: "Playfair";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/playfair/Playfair_9pt-Medium.woff2") format("woff2"), url("../fonts/playfair/Playfair_9pt-Medium.woff") format("woff");
+}
 body {
   color: rgb(33, 33, 33);
   font-family: Lexend;
@@ -721,7 +727,7 @@ body.dark .pop-up__header-mobile {
   text-align: center;
   font-family: Playfair;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 133.333333%; /* 32/24 */
 }
 
