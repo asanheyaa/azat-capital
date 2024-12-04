@@ -107,6 +107,12 @@ body {
   src: url("../fonts/lexend/Lexend-SemiBold.woff2") format("woff2"), url("../fonts/lexend/Lexend-SemiBold.woff") format("woff");
 }
 @font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/lexend/Lexend-ExtraLight.woff2") format("woff2"), url("../fonts/lexend/Lexend-ExtraLight.woff") format("woff");
+}
+@font-face {
   font-family: "Playfair";
   font-style: normal;
   font-weight: 400;
@@ -435,7 +441,7 @@ body.dark .pop-up__header-mobile {
 .hero__title {
   font-family: Playfair;
   margin-bottom: 10px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 100%; /* 64/64 */
   font-size: 64px;
 }
@@ -496,7 +502,7 @@ body.dark .pop-up__header-mobile {
 }
 .title {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
@@ -546,7 +552,7 @@ body.dark .pop-up__header-mobile {
 .values__label {
   font-family: Playfair;
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 112.5%; /* 36/32 */
   margin-bottom: 48px;
 }
@@ -628,7 +634,7 @@ body.dark .pop-up__header-mobile {
 .services__label {
   font-family: Playfair;
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 112.5%; /* 36/32 */
   margin-bottom: 25px;
 }
@@ -686,7 +692,7 @@ body.dark .pop-up__header-mobile {
 .process__label {
   font-family: Playfair;
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 36px;
 }
 .process__number {
@@ -727,7 +733,7 @@ body.dark .pop-up__header-mobile {
   text-align: center;
   font-family: Playfair;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 133.333333%; /* 32/24 */
 }
 
@@ -774,6 +780,7 @@ body.dark .pop-up__header-mobile {
 }
 .footer__copy {
   text-align: center;
+  font-weight: 200;
 }
 @media (max-width: 1300px) {
   .footer__copy {
@@ -809,6 +816,7 @@ body.dark .pop-up__header-mobile {
   color: rgb(255, 255, 255);
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  font-weight: 200;
 }
 @media (any-hover: hover) and (any-hover: hover) {
   .footer-menu__link:hover {
@@ -1203,7 +1211,7 @@ body.dark .pop-up__header-mobile {
 .text-block__main-title {
   font-family: Playfair;
   font-size: 48px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 100%; /* 48/48 */
   margin-bottom: 40px;
 }
@@ -1223,7 +1231,7 @@ body.dark .pop-up__header-mobile {
 .text-block__title {
   font-family: Playfair;
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 36px;
   margin-bottom: 20px;
 }
