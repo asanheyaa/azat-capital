@@ -435,7 +435,7 @@ body.dark .pop-up__header-mobile {
 .hero__title {
   font-family: Playfair;
   margin-bottom: 10px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 100%; /* 64/64 */
   font-size: 64px;
 }
@@ -546,7 +546,7 @@ body.dark .pop-up__header-mobile {
 .values__label {
   font-family: Playfair;
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 112.5%; /* 36/32 */
   margin-bottom: 48px;
 }
@@ -628,7 +628,7 @@ body.dark .pop-up__header-mobile {
 .services__label {
   font-family: Playfair;
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 112.5%; /* 36/32 */
   margin-bottom: 25px;
 }
@@ -686,7 +686,7 @@ body.dark .pop-up__header-mobile {
 .process__label {
   font-family: Playfair;
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 36px;
 }
 .process__number {
@@ -870,6 +870,7 @@ body.dark .pop-up__header-mobile {
 @media (max-width: 991.98px) {
   .theme-switcher__button {
     display: none;
+    color: rgb(33, 33, 33);
   }
   .theme-switcher__button._active {
     display: block;
@@ -977,6 +978,7 @@ body.dark .pop-up__header-mobile {
           align-items: center;
 }
 .contacts__button span {
+  color: rgb(33, 33, 33);
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease 0s;
@@ -1159,6 +1161,8 @@ body.dark .pop-up__header-mobile {
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  color: rgb(33, 33, 33);
+  font-size: 16px;
 }
 .pop-up__close svg {
   display: inline-block;
@@ -1168,6 +1172,11 @@ body.dark .pop-up__header-mobile {
   fill: #212121;
   height: 20px;
   width: 20px;
+}
+@media (max-width: 991.98px) {
+  .pop-up__close {
+    display: none;
+  }
 }
 @media (any-hover: hover) {
   .pop-up__close:hover span {
@@ -1194,7 +1203,7 @@ body.dark .pop-up__header-mobile {
 .text-block__main-title {
   font-family: Playfair;
   font-size: 48px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 100%; /* 48/48 */
   margin-bottom: 40px;
 }
@@ -1214,7 +1223,7 @@ body.dark .pop-up__header-mobile {
 .text-block__title {
   font-family: Playfair;
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 36px;
   margin-bottom: 20px;
 }
